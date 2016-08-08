@@ -1,0 +1,551 @@
+/*need set the min-height and min-width for the body so the content can display */
+body,html {
+	width: 100%;
+	height: 100%;
+	
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	
+	position: absolute;
+	
+	overflow: auto;
+}
+
+#top-bar
+{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width: 100%;
+	height: 30px;
+}
+#top-bar-left
+{
+	position: absolute;
+	height:30px;
+	right: 55px;
+	left:0px;
+	background: url(../images/top_bar_left.jpg) repeat-x;
+	
+}
+#top-bar-right
+{
+	position: absolute;
+	right:0px;
+	height:30px;
+	width:55px;
+	background: url(../images/top_bar_right.jpg) no-repeat;
+}
+
+#bottom-bar
+{
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	width: 100%;
+	height: 15px;
+}
+#bottom-bar-left
+{
+	position:absolute;
+	height:15px;
+	right:55px;
+	left:0px;
+	background: url(../images/bottom_bar_left.jpg) repeat-x;
+
+}
+#bottom-bar-right
+{
+	position: absolute;
+	right:0px;
+	height:15px;
+	width: 55px;
+	background: url(../images/bottom_bar_right.jpg) no-repeat;
+}
+
+#right-bar
+{
+	position: absolute;
+	right:0px;
+	width: 55px;
+	top:30px;
+	bottom:15px;
+	background: url(../images/right_bar.jpg) repeat-y;
+}
+
+#left-bar
+{
+	position: absolute;
+	left:0px;
+	width:30px;
+	top:30px;
+	bottom:15px;
+	background: url(../images/left_bar.jpg) repeat-y;
+}
+
+
+#right-bar .logo {
+    position:relative; 
+	top: 3px;
+	width: 52px;
+    height: 25px;
+    background: url(../images/SAPLogo.png) no-repeat;
+}
+
+
+#right-bar .alert {
+	position: relative;
+    width: 44px;
+    height: 44px;
+    background: url(../images/LeftNavi_Alert_Button.png) no-repeat;
+    cursor:pointer;
+
+}
+
+
+#right-bar .tabbar{
+	position: relative;
+	width: 50px; 
+	height:300px;
+	margin-left:10px;
+}
+
+#right-bar .tabs 
+{
+	border:0; margin:0; padding:0; list-style:none;
+}
+
+#right-bar li
+{
+	width: 30px; 
+	height: 90px;
+}
+
+
+#right-bar .tab
+{
+	width: 40px; 
+	height: 90px;	
+	/* float:left; margin-right:2px; */
+}
+
+#right-bar .tabs a
+{
+	background: ghostwhite;
+	color:#666666;
+	display:block;
+	font-family: 'Helvetica Regular', Arial;
+	height:90px;
+	line-height:28px;
+	text-decoration:none;
+	border: 1px solid #C0C0C0;
+	border-left: 0px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-topright: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+}
+#right-bar .tabs a span
+{
+	font-family: Calibri, Helvetica, sans-serif;
+	font-size: 15px;
+	display:block;
+	height:28px;
+	-webkit-transform: rotate(90.0deg) translate(10px,0px);
+}
+#right-bar .tabs a:hover
+{
+	display:block;
+	background: aliceblue;
+}
+#right-bar .tabs a:hover span
+{
+	display:block;
+}
+
+/* #right-bar .active a:link, #right-bar .active a:visited, #right-bar .active a:visited, #right-bar .active a:hover */
+#right-bar .active a
+{
+	position:absolute;
+	left: -5px;
+	background: aliceblue;
+}
+#right-bar .active a span, #right-bar .active a:hover span
+{
+	font-weight:bold;
+}
+
+
+#right-bar .calendar {
+	position : relative;
+	left: 15px;
+    width: 44px;
+    height: 30px;
+    background: url(../images/TimePeriodButton.png) no-repeat;
+    cursor:pointer;
+}
+#right-bar .share {
+	position : relative;
+	left: 15px;
+    width: 44px;
+    height: 30px;
+    background: url(../images/ExportButton.png) no-repeat;
+    cursor:pointer;
+}
+#right-bar .help {
+	position : relative;
+	left: 15px;
+    width: 44px;
+    height: 30px;
+    background: url(../images/HelpButton.png) no-repeat;
+    cursor:pointer;
+}
+#right-bar .setting {
+	position : relative;
+	left: 15px;
+	width: 44px;
+	height: 30px;	
+	background: url(../images/SettingButton.png) no-repeat;
+	cursor:pointer;
+}
+
+#data-view{
+	position:absolute;
+	left:40px;
+	top:30px;
+	right:65px;
+	bottom:70px;
+
+	font-family: 'Helvetica Regular', Arial;
+	overflow:hidden;
+}
+
+#buttonHorizontalLayout{
+	display: block;
+	text-align: left;
+}
+
+
+.footer{
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+#legend-view{
+	display: none;
+ 	text-align: center;
+ 	/**width: 580px; */ 
+    height:20px;
+ 	text-align: center;
+    font-family: 'Helvetica Regular', Arial;
+    margin-left: auto;
+	margin-right: auto;
+	
+	border: 1px solid #444;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	box-shadow:5px 5px 8px #444;
+}
+
+.hide {
+	
+	display:none;
+}
+
+/*#legendlayout{
+	left:40%;
+	width:50%;
+}*/
+
+#Dropdown { margin: 0 4px; }
+
+#LabelSwitcher {
+	position: relative;
+	top: 2px;
+	margin: 0 8px; 
+	font-size:12px;
+}
+
+.mainVerticalLayout{
+	position: relative;
+	top: 0px;
+}
+
+.headerData{
+	text-align: left;
+}
+
+
+.headerDataName, .headerDataSpend{
+	font-size:20px !important;
+	font-weight:bold !important;
+	color: dimgray !important;
+	margin-top: 10px;
+}
+
+.switch_toolbar{
+	top: 5px;	
+	height:50px;
+}
+
+
+.headerDataYearofDate, .headerDataLeftOrOver{
+	font-size:15px !important;
+	color: dimgray !important;
+}
+
+.lineItemTreeTable{
+	margin-top: -30px;
+}
+
+.rsNaviMng, .rsNaviMng:link,.rsNaviMng:active{
+	font-size:14px;
+	font-family: "myriad-pro-1","myriad-pro-2","Helvetica","Arial",sans-serif;
+ 	font-weight: 600;
+	line-height: 16px;
+	color: #447099;
+	vertical-align: top;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;	
+}
+
+.rsToolPopup{
+	background-color: white !important;
+}
+
+.rsHeaderUserImage{
+	margin: 0 10px;
+	padding-top: 17px;	
+}
+
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiSegButtonSelected{
+box-shadow: 0 -1px 0 0 #6a6a6a inset !important;
+cursor: default;
+background-color: #6A6A6A !important;
+color: white;
+}
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnStd:hover, .sapUiBtnS.sapUiBtnStd.sapUiBtnStdHover {
+background-color: #E2E2E2 !important;
+}
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:hover, .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd.sapUiBtnStdHover {
+border-color: #E2E2E2 !important;
+}
+
+.sapUiSegmentedButton > .sapUiBtnS.sapUiBtnNorm.sapUiBtnStd:focus:not(.sapUiSegButtonSelected) {
+box-shadow: 0 1px 0 0 gray inset,1px 0 0 0 gray inset !important;
+}
+
+.sapUiBtnS.sapUiBtnStd:hover, .sapUiBtnS.sapUiBtnStd.sapUiBtnStdHover {
+box-shadow: 0 1px 0 0 gray inset,1px 0 0 0 gray inset !important;
+border-color: #E2E2E2 !important;
+cursor: default;
+background-color: #E2E2E2 !important;
+color: white;
+}
+
+.sapUiPanelCont {
+overflow: hidden !important;
+}
+
+.oLeftOverOnPieHeader, .oTotalOnPieHeader{
+	margin: 0 4px;
+	font-size:15px !important;
+	color: dimgray !important;
+}
+
+.rsOverviewMatrixLayout{
+	margin-top: 50px;
+}
+
+.rsSeeDetailButton{
+	height: 47px !important;
+	width: 50px !important;	
+	padding: 0 0px 0px !important;
+}
+
+.rsBackButton{
+	height: 50px !important;
+	width: 52px !important;	
+	padding: 0 0px 0px !important;
+}
+
+.sapUiTvDsbl {
+color: #404040 !important;
+}
+
+
+<!-- for pie -->
+.pie_container{
+	overflow:visible;
+}
+.pie_tooltip{
+	margin: 8px;
+    line-height: 20px;
+   	display:none;
+	padding:10px;
+	position:absolute;	
+	z-index:1000;
+	background: white;
+	box-shadow:5px 5px 8px #444;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.pie_tooltip .tri1 {
+    		z-index: 11;
+    		position: absolute;
+    		top: -20px;
+    		left: 10px;
+    		height: 0;
+    		width: 0;
+    		border-style: solid;
+    		border-width: 10px;
+    		border-color: transparent transparent white transparent;
+}
+.pie_tooltip .tri2 {
+}
+.pie_svg {}
+.slice {}
+.slice:hover {cursor: pointer;}
+.slice_text {}
+		
+<!--for bar -->
+.budget_bar{}
+.warningIcon {
+	position: absolute;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	background: url(../images/Detail_Chart_Warning_Icon.png) no-repeat;
+}
+
+.budget_bar_total .tri_left {
+    		z-index: 11;
+    		position: absolute;
+    		left: 0;
+    		height: 0;
+    		width: 0;
+    		border-style: solid;
+    		border-color: transparent transparent transparent green;
+    		top: 0px;
+}
+.budget_bar_total .tri_right {
+    		z-index: 11;
+    		position: absolute;
+    		left: 0;
+    		height: 0;
+    		width: 0;
+    		border-style: solid;
+    		border-color: transparent green transparent transparent;
+    		top: 0px;
+}
+.budget_bar_committed {
+    		opacity: 0.6;
+    		background-color: gray;
+    		background-image: url(../images/slash.png);
+}
+
+
+
+/*padding between items in the legend */
+.sapUiHLayout_items > * {
+		margin-left: 10px;
+}
+
+/*padding between controls in one item in the legend */
+.sapUiHLayout_in_item > * {
+		margin-left: 8px;
+}
+
+/*the following is just for two buttons in alert view*/
+#BtnClose,#BtnMarkAll{
+	margin: 0px 5px 10px 5px;	
+	width: 150px;
+	height: 40px;  	
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7 !important;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7 !important;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7 !important;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) ) !important;
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% ) !important;
+	background-color:#378de5 !important;
+	-moz-border-radius:6px !important;
+	-webkit-border-radius:6px !important;
+	border-radius:6px !important;
+	border:1px solid #84bbf3 !important;
+	display:inline-block;
+	color:#ffffff ;
+	font-family:arial ;
+	font-size:15px ;
+	font-weight:bold ;	
+	text-decoration:none ;
+	text-shadow:1px 1px 0px #528ecc ;
+}
+
+.noDrawPieForAllDataZero{
+	margin-top: 120px;
+	height: 30px;
+	font-size:20px !important;
+	font-weight:bold !important;
+	color: red !important;
+}
+.naviHeader
+{
+	border-bottom: 1px solid #C0C0C0;
+	width: 100%;
+	height: 30px;
+}
+
+
+.sapMSegBBtnSel{
+box-shadow: 0 -1px 0 0 #6a6a6a inset !important;
+cursor: default;
+background-color: #6A6A6A !important;
+color: white;
+}
+
+/*alert css*/
+.alert-help{
+  background-image: -webkit-linear-gradient(top, #CDDED6 0%, #D0D9D9 47%, #CFD4D6 52%, #CED7D9 61%, #E4EAEB 88%);
+  margin: 0;margin-top: 0.5px;border-top: #666;border-bottom: #666;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  box-shadow: 0px -1px 0 0 rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0 rgba(0, 0, 0, 0.2) inset;
+  opacity: 0.8;color: #FFFFFF;display: block;font-weight: bold;
+}
+
+.alert-date{color: blue;float: right;margin-left: 5px;}
+
+.bg-white {background-color: white !important;}
+.help-list-item {padding: 15px;}
+
+.segCont {margin: 20px 15px !important;}
+.dropdown {margin: 0px 19px !important;}
+
+.overviewSwitchButton li, .trendviewSwitchButton li 
+{
+	width: 100px !important;
+}
+
+.detailviewSwitchButton li
+{
+	width: 120px !important;
+}

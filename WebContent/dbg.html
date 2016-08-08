@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link type="text/css" rel="stylesheet" href="css/treemap.css" />
+		<link type="text/css" rel="stylesheet" href="css/treetable.css" />
+		<link type="text/css" rel="stylesheet" href="css/tooltip.css" />
+		<link type="text/css" rel="stylesheet" href="css/barHierarchy.css" />
+		<link rel="stylesheet" href="css/setting.css">
+	</head>
+	
+	<body class="sapUiBody" role="application">
+		<div id = "left-bar"></div>
+		<div id="right-bar">
+		</div>
+
+		<div id = "top-bar">
+		<div id = "top-bar-left"></div>
+		<div id = "top-bar-right"></div>
+		</div>
+		<section>
+		<div id="data-view">
+		<div id='sub0' style="display: none; "></div>
+		<div id='sub1' style="display: none; "></div>
+		<div id='sub2' style="display: none; "></div>
+		</div>
+		</section>
+
+		<div class="footer">
+		<div id="legend-view"></div>
+		</div>
+
+		<div id = "bottom-bar">
+		<div id = "bottom-bar-left"></div>
+		<div id = "bottom-bar-right"></div>
+		</div>	
+
+
+
+		<script src="../../resources/sap-ui-core-all-dbg.js" id="sap-ui-bootstrap"
+		data-sap-ui-libs="sap.m,sap.ui.ux3,sap.ui.commons,sap.ui.table"
+		data-sap-ui-theme="sap_mvi">
+		</script>
+
+		<script src="lib/jquery.plugin.min.js"></script>
+		<script src="lib/jquery.treetable.js"></script>
+		<script src="lib/jquery.hammer.js"></script>   			  
+
+		<script src="rs/Global.js"></script>
+		<script src="rs/util/Util.js"></script>
+		<script src="rs/cfg/Global.js"></script>
+		<script src="rs/cfg/Cfg.js"></script>
+
+		<script src="rs/cfg/SapSlider.js"></script>
+		<script src="rs/cfg/Settingdialog.js"></script>
+		<script src="rs/cfg/TimePeriod.js"></script>
+
+
+		<script src="rs/model/Model.js"></script>
+		<script src="rs/model/ODataHelper.js"></script>
+		<script src="rs/model/GeneralParam.js"></script>
+		<script src="rs/model/HierMng.js"></script>
+		<script src="rs/model/FuncParam.js"></script>
+		<script src="rs/model/ModelMng.js"></script>
+		<script src="rs/model/TextMng.js"></script>
+		<script src="rs/model/Alert.js"></script>
+		<script src="rs/model/Note.js"></script>
+
+		<script src="rs/uilib/TreeMap.js"></script>
+		<script src="rs/uilib/AreaChart.js"></script>
+		<script src="rs/uilib/BarChart.js"></script>
+		<script src="rs/uilib/LoadingWrapper.js"></script>
+		<script src="rs/uilib/ControlWrapper.js"></script>
+		<script src="rs/uilib/Bar.js"></script>
+		<script src="rs/uilib/NoteNumber.js"></script>
+		<script src="rs/uilib/AttachmentNumber.js"></script> 			 
+		<script src="rs/uilib/TreeTable.js"></script>
+		<script src="rs/uilib/TreeTableBody.js"></script>   
+		<script src="rs/uilib/TreeTableRow.js"></script>
+
+		<script src="rs/controller/HierOverView.js"></script>
+		<script src="rs/controller/Main.js"></script>
+		<script src="rs/controller/HierDetail.js"></script>
+		<script src="rs/controller/LineItem.js"></script>
+		<script src="rs/controller/Trend.js"></script>
+
+		<script src="rs/view/Global.js"></script>   			  
+		<script src="rs/view/PageMng.js"></script>
+		<script src="rs/view/NaviMng.js"></script>
+		<script src="rs/view/Main.js"></script>
+		<script src="rs/view/HierBaseView.view.js"></script>
+		<script src="rs/view/HierOverView.view.js"></script>
+		<script src="rs/view/HierDetail.view.js"></script>
+		<script src="rs/view/LineItem.view.js"></script>
+		<script src="rs/view/Trend.view.js"></script>
+
+		<script src="rs/view/Alert.js"></script>
+		<script src="rs/view/Help.js"></script>
+		<script src="rs/view/Legend.js"></script>
+		<script src="rs/view/Note.js"></script>
+
+		<script src='rs/DemoData/Transform.js'></script>
+		<script src='rs/DemoData/ErrorSimulator.js'></script>
+
+		<script>
+		rs.ModuleMng.init();
+		</script>
+
+	</body>
+</html>
